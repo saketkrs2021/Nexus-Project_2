@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="google-signin-client_id"
+      content="YOUR_CLIENT_ID.apps.googleusercontent.com"
+    />
+    <title>Login and Signup form</title>
+    <link rel="stylesheet" href='style.css' />
+  </head>
+  <body>
+    <div class="hero" style="background-image: url('onepage_restaurant.jpg')">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Login
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+        <div class="social-icons">
+          <!-- <img src="fb.png" alt="">
+                <img src="gp.png" alt="">
+                <img src="tw.png" alt=""> -->
+        
+          <div id="google social-img">
+            <div
+              class="g-signin2"
+              data-width="165px"
+              data-height="22px"
+              data-longtitle="true"
+            ></div>
+            <script src="google.js"></script>
+            <script
+              src="https://apis.google.com/js/platform.js?onload=renderButton"
+              async
+              defer
+            ></script>
+          </div>
+
+          <div id="fb">
+            <div id="fb-root"></div>
+            <script
+              async
+              defer
+              crossorigin="anonymous"
+              src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0"
+              nonce="yJEYLJbR"
+            ></script>
+            <div
+              class="fb-login-button social-img"
+              data-width="300px"
+              data-size=""
+              data-button-type=""
+              data-layout=""
+              data-auto-logout-link="true"
+              data-use-continue-as="false"
+            ></div>
+          </div>
+
+        </div>
+        
+        <form class="input-group" id="login" action="/login" method="post" >
+          <!-- <div class="Email"> -->
+            <input
+            type="text"
+            class="input-field"
+            name="username"
+            placeholder="UserId"
+            required
+          />
+          <div id="emailError"></div>
+        <!-- </div> -->
+        <!-- <div class="Password"> -->
+          <input
+            type="text"
+            class="input-field"
+            name="password"
+            placeholder="Enter Password"
+            required
+          />
+          <!-- <div id=""></div> -->
+        <!-- </div> -->
+          <input type="checkbox" class="check-box" />
+          <span>Remember Password</span>
+          <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        <!-- <script src="validatelogin.js"></script> -->
+        <form class="input-group" id="register" action="/register" method="post">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="UserId"
+            name="username"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Email"
+            name="email"
+            required
+          />
+          <div id="emailError"></div>
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Password"
+            name="password"
+            required
+          />
+          <div id=""></div>
+          <input type="checkbox" class="check-box" />
+          <span>I agree to terms and conditions</span>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+        <!-- <script src="validateregister.js"></script> -->
+        <script>
+          var x = document.getElementById("login");
+          var y = document.getElementById("register");
+          var z = document.getElementById("btn");
+          function register() {
+            x.style.left = "-450px";
+            y.style.left = "50px";
+            const element = document.getElementsByClassName(".hero");
+            const width= element.offsetWidth;
+            console.log(width);
+            if(width<=1280)
+            z.style.left ="75px";
+            else
+            z.style.left = "110px";            
+          }
+          function login() {
+            x.style.left = "50px";
+            y.style.left = "500px";
+            z.style.left = "0px";
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
