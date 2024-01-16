@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .hero {
+    height: 100%;
+    width: 100%;
+    background-image: 
+    url(onepage_restaurant.jpg);
+    background-position: centre;
+    background-size: cover;
+    position: absolute;
+  }
+  .form-box {
+    height: 420px;
+    width: 380px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+  }
+  .button-box {
+    width: 220px;
+    position: relative;
+    margin: 35px auto;
+    box-shadow: 0 0 20px 9px #0906051f;
+    border-radius: 30px;
+  }
+  .toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    position: relative;
+    outline: none;
+  }
+  #btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 110px;
+    background: linear-gradient(to right, #dc4646, #ef8812);
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+  .social-icons {
+    left: 100px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+  
+  }
+  .social-img {
+    margin: 12px 0 12px 0;
+    left:0px;
+  }
+  .input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5;
+  }
+  .input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+  }
+  .submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #dc4646, #ef8812);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+  }
+  .check-box {
+    margin: 30px 10px 10px 0;
+  }
+  .span {
+    color: #777;
+    font-size: 12px;
+    bottom: 30px;
+    position: absolute;
+  }
+  #login {
+    left: 50px;
+  }
+  #register {
+    left: 500px;
+  }
+  
+  /* 2xl */
+  @media (max-width: 1536px) {
+    .hero {
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(banner.jpg);
+      background-position: centre;
+      background-size: cover;
+      position: absolute;
+    }
+    .form-box {
+      height: 480px;
+      width: 380px;
+      padding: 5px;
+    }
+    .button-box {
+      width: 220px;
+      position: relative;
+      margin: 35px auto;
+      box-shadow: 0 0 20px 9px #0906051f;
+      border-radius: 30px;
+    }
+    .toggle-btn {
+      padding: 10px 30px;
+    }
+    #btn {
+      width: 110px;
+      border-radius: 30px;
+    }
+    .social-icons {
+      left: 100px;
+      border-radius: 5px;
+    }
+    .social-img {
+      margin: 12px 0 12px 0;
+      left:0px;
+    }
+    .input-group {
+      top: 180px;
+      
+      width: 280px;
+    }
+    .input-field {
+      padding: 10px 0;
+      margin: 5px 0;
+      
+    }
+    .submit-btn {
+      padding: 10px 30px;
+      border-radius: 30px;
+    }
+    .check-box {
+      margin: 30px 10px 10px 0;
+    }
+    .span {
+      color: #777;
+      font-size: 12px;
+      bottom: 30px;
+      position: absolute;
+    }
+  }
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    .hero {
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(banner.jpg);
+      background-position: centre;
+      background-size: cover;
+      position: absolute;
+    }
+    .form-box {
+      height: 480px;
+      width: 270px;
+      padding: 5px;
+    }
+    .button-box {
+      width: 150px;
+      position: relative;
+      margin: 35px auto;
+      box-shadow: 0 0 20px 9px #0906051f;
+      border-radius: 30px;
+    }
+    .toggle-btn {
+      padding: 10px 15px;
+    }
+    #btn {
+      width: 75px;
+      border-radius: 30px;
+    }
+    .social-icons {
+      left: 67px;
+      border-radius: 5px;
+    }
+    .social-img {
+      /* padding: 0 30px 0 30px; */
+      margin: 12px 0 12px 0;
+      left:0px;
+    }
+    .input-group {
+      top: 180px;
+      padding-top: 20px;
+      width: 180px;
+    }
+    .input-field {
+      padding: 15px 0;
+      margin: 5px 0;
+      
+    }
+    .submit-btn {
+      padding: 10px 30px;
+      border-radius: 30px;
+    }
+    .check-box {
+      margin: 30px 10px 10px 0;
+    }
+    .span {
+      color: #777;
+      font-size: 12px;
+      bottom: 30px;
+      position: absolute;
+    }
+  }
+  
+  /* lg */
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  /* md */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  /* sm */
+  @media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  
+  /* xs */
+  @media (max-width: 475px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
